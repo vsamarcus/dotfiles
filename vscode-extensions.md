@@ -1,0 +1,18 @@
+🔥 Here is the list of extensions that I'm currently using on my VSCode
+
+- [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+- [Colorize](https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize)
+- [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+- [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Hyper Term Theme](https://marketplace.visualstudio.com/items?itemName=hsnazar.hyper-term-theme)
+- [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [MongoDB for VS Code](https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode)
+- [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Prisma](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)
+- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+- [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
