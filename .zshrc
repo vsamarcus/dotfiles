@@ -42,7 +42,7 @@ ZSH_THEME="spaceship"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -75,7 +75,7 @@ plugins=(
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
-source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh
+#source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh
 
 ## env vars
 export NODE_ENV="development"
@@ -114,10 +114,11 @@ export PATH="$HOME/.yarn/bin:$PATH"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zs="source ~/.zshrc"
-alias zsc="code ~/.zshrc"
-alias ne="echo $NODE_ENV"
-alias ..="cd .."
+
+
+# Load aliases if they exist.
+[ -f "${HOME}/.aliases" ] && source "${HOME}/.aliases"
+[ -f "${HOME}/.aliases.local" ] && source "${HOME}/.aliases.local"
 
 
 SPACESHIP_PROMPT_ORDER=(
