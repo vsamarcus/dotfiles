@@ -4,13 +4,16 @@
 	name = Marcus Vinícius
 	email = marcusv.sa@hotmail.com
 [alias]
-		ci = "!f() { git add -A && git commit -m \"$*\"; }; f"
+		c = "!f() { git add -A && git commit -m \"$*\"; }; f"
 
 		# Less verbose status
-		st = status -sb
+		s = status -sb
 
 		# Checkout
 		co = checkout
+
+		#Checkout branch
+    cb = checkout -b
 
 		# Checkout master
 		cm = checkout master
@@ -19,7 +22,39 @@
 		cs = checkout staging
 
 		# Checkout development
-		cd = checkout development
+		cd = checkout develop
+
+		# Push user master
+		pom = !(git push -u origin master)
+
+		# Push master
+		pm = !(git push origin master)
+
+		# Push staging[core]
+	editor = code
+[user]
+	name = Marcus Vinícius
+	email = marcusv.sa@hotmail.com
+[alias]
+		c = "!f() { git add -A && git commit -m \"$*\"; }; f"
+
+		# Less verbose status
+		s = status -sb
+
+		# Checkout
+		co = checkout
+
+		#Checkout branch
+    cb = checkout -b
+
+		# Checkout master
+		cm = checkout master
+
+		# Checkout staging
+		cs = checkout staging
+
+		# Checkout development
+		cd = checkout develop
 
 		# Push user master
 		pom = !(git push -u origin master)
@@ -31,9 +66,26 @@
 		ps = !(git push origin staging)
 
 		# Push development
-		pd = !(git push origin development)
+		pd = !git push origin develop
 
-    cb = checkout -b
+    sf = show --name-only
+
+		# Pretty log
+    l = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
+    
+
+		hist = !git log --oneline --graph --decorate --all
+
+		incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..@{u})
+    outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
+    unstage = reset HEAD --
+    undo = checkout --
+    rollback = reset --soft HEAD~1
+
+		ps = !(git push origin staging)
+
+		# Push development
+		pd = !git push origin develop
 
     sf = show --name-only
 
